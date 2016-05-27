@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlAdv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <com.zhangxin.news.ViewPager.AdvViewPager
+        android:id="@+id/vpAdv"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp" >
+    </com.zhangxin.news.ViewPager.AdvViewPager>
+
+    <TextView
+        android:id="@+id/pager_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#55444444"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vpAdv"
+        android:layout_marginTop="-25px"
+        android:gravity="right"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+
+
+</RelativeLayout>

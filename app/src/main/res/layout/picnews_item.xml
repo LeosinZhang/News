@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    >
+
+    <TextView
+        android:id="@+id/picnews_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:id="@+id/picnews_Review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/picnews_title"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp"
+        android:textColor="#ff555555" />
+
+<!--    <ImageView
+        android:id="@+id/pic_one"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/picnews_title"
+        android:layout_alignLeft="@id/picnews_title"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:id="@+id/pic_two"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@id/pic_one"
+        android:layout_toRightOf="@id/pic_one"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:id="@+id/pic_three"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@id/pic_two"
+        android:layout_toRightOf="@id/pic_two"
+        android:layout_marginRight="5dp" />-->
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/pic_one"
+        android:layout_width="115dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center|center_vertical|center_horizontal"
+        android:layout_below="@+id/picnews_title"
+        android:layout_alignLeft="@id/picnews_title"
+        android:layout_marginRight="5dp"/>
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/pic_two"
+        android:layout_width="115dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center|center_vertical|center_horizontal"
+        android:layout_alignTop="@id/pic_one"
+        android:layout_toRightOf="@id/pic_one"
+        android:layout_marginRight="5dp"  />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/pic_three"
+        android:layout_width="115dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center|center_vertical|center_horizontal"
+        android:layout_alignTop="@id/pic_two"
+        android:layout_toRightOf="@id/pic_two"
+        android:layout_marginRight="5dp"  />
+
+
+</RelativeLayout>
